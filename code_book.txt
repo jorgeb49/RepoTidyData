@@ -1,0 +1,28 @@
+Thefileall_data created has 22 columns:
+- X_means: Contains the mean of the X variable for each observation
+- X_std: Contains the std of X for each observation
+- Activity: Walking, WalkingUp, Walking Down, Laying, Sitting
+- Subject: The subject of study, from 1 to 30
+
+- body_acc_x_train_means: The mean of the body_acc_x for both observations, train and test
+- body_acc_y_train_means: As above for body_acc_y
+- body_acc_z_train_means: As above for body_acc_z
+- body_acc_x_train_std: The st. deviation of the body_acc_x for both train and test
+- body_acc_y_train_std:As above for body_acc_y
+- body_acc_z_train_std:As above for body_acc_z
+
+
+- body_gyro_x_train_means: The mean of the body_gyro_x for both observations, train and test
+- body_gyro_y_train_means: As above for body_gyro_y
+- body_gyro_z_train_means: As above for body_gyro_z
+- body_gyro_x_train_std: The st. deviation of the body_gyro_x for both observations, train and test
+- body_gyro_y_train_std: As above for body_gyro_y
+- body_gyro_z_train_std: As above for body_gyro_z
+
+
+- total_acc_x_train_means: The mean of the total_acc_x for both observations, train and test
+- total_acc_y_train_means: Same as above but for total_acc_y
+- total_acc_z_train_means: Same as above but for total_acc_z
+- total_acc_x_train_std: The st. deviation of the total_acc_x for both observations, train and test
+- total_acc_y_train_std: Same as above but for total_acc_y
+- total_acc_z_train_std: Same as above but for total_acc_z
