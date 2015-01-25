@@ -63,10 +63,10 @@ body_acc_x_train <- read.table("./train/Inertial Signals/body_acc_x_train.txt", 
 cols= ncol(body_acc_x_train) # has 128 col
 #head(body_acc_x_train)
 
-body_acc_x_train_means <- rowMeans(body_acc_x_train)
-body_acc_x_train_std <- apply(body_acc_x_train,1, sd, na.rm = TRUE)
-body_acc_x_train_ <- data.frame(body_acc_x_train_means,body_acc_x_train_std)  #X_train_
-head(body_acc_x_train_)
+body_acc_x_means <- rowMeans(body_acc_x_train)
+body_acc_x_std <- apply(body_acc_x_train,1, sd, na.rm = TRUE)
+body_acc_x_<- data.frame(body_acc_x_means,body_acc_x_std)  #X_train_
+head(body_acc_x_)
 
 
 
@@ -75,30 +75,30 @@ body_acc_y_train <- read.table("./train/Inertial Signals/body_acc_y_train.txt", 
 cols = ncol(body_acc_y_train) # has 128 col
 #ncol(body_acc_y_train) has 128 col
 #head(body_acc_y_train)
-body_acc_y_train_means <- rowMeans(body_acc_y_train)
-body_acc_y_train_std <- apply(body_acc_y_train,1, sd, na.rm = TRUE)
-body_acc_y_train_ <- data.frame(body_acc_y_train_means,body_acc_y_train_std)  #X_train_
-head(body_acc_y_train_)
+body_acc_y_means <- rowMeans(body_acc_y_train)
+body_acc_y_std <- apply(body_acc_y_train,1, sd, na.rm = TRUE)
+body_acc_y_ <- data.frame(body_acc_y_train_means,body_acc_y_train_std)  #X_train_
+head(body_acc_y_)
 
 
 body_acc_z_train <- read.table("./train/Inertial Signals/body_acc_z_train.txt", sep="", header=FALSE)
 #nrow(body_acc_z_train) has 7352 rows and
 #ncol(body_acc_z_train) has 128 col
 #head(body_acc_z_train)
-body_acc_z_train_means <- rowMeans(body_acc_z_train)
-body_acc_z_train_std <- apply(body_acc_z_train,1, sd, na.rm = TRUE)
-body_acc_z_train_ <- data.frame(body_acc_z_train_means,body_acc_z_train_std)  #X_train_
-head(body_acc_z_train_)
+body_acc_z_means <- rowMeans(body_acc_z_train)
+body_acc_z_std <- apply(body_acc_z_train,1, sd, na.rm = TRUE)
+body_acc_z_ <- data.frame(body_acc_z_means,body_acc_z_std)  #X_train_
+head(body_acc_z_)
 
 
 body_gyro_x_train <- read.table("./train/Inertial Signals/body_gyro_x_train.txt", sep="", header=FALSE)
 #nrow(body_gyro_x_train) has 7352 rows and
 #ncol(body_gyro_x_train) has 128 col
 #head(body_gyro_x_train)
-body_gyro_x_train_means <- rowMeans(body_gyro_x_train)
-body_gyro_x_train_std <- apply(body_gyro_x_train,1, sd, na.rm = TRUE)
-body_gyro_x_train_ <- data.frame(body_gyro_x_train_means,body_gyro_x_train_std)  #X_train_
-head(body_gyro_x_train_)
+body_gyro_x_means <- rowMeans(body_gyro_x_train)
+body_gyro_x_std <- apply(body_gyro_x_train,1, sd, na.rm = TRUE)
+body_gyro_x_ <- data.frame(body_gyro_x_means,body_gyro_x_std)  #X_train_
+head(body_gyro_x_)
 
 
 
@@ -106,19 +106,19 @@ body_gyro_y_train <- read.table("./train/Inertial Signals/body_gyro_y_train.txt"
 #nrow(body_gyro_y_train) has 7352 rows and
 #ncol(body_gyro_y_train) has 128 col
 #head(body_gyro_y_train)
-body_gyro_y_train_means <- rowMeans(body_gyro_y_train)
-body_gyro_y_train_std <- apply(body_gyro_y_train,1, sd, na.rm = TRUE)
-body_gyro_y_train_ <- data.frame(body_gyro_y_train_means,body_gyro_y_train_std)  #X_train_
-head(body_gyro_y_train_)
+body_gyro_y_means <- rowMeans(body_gyro_y_train)
+body_gyro_y_std <- apply(body_gyro_y_train,1, sd, na.rm = TRUE)
+body_gyro_y_ <- data.frame(body_gyro_y_means,body_gyro_y_std)  #X_train_
+head(body_gyro_y_)
 
 
 
 body_gyro_z_train <- read.table("./train/Inertial Signals/body_gyro_z_train.txt", sep="", header=FALSE)
 #nrow(body_gyro_z_train) has 7352 rows and
 #ncol(body_gyro_z_train) has 128 col
-body_gyro_z_train_means <- rowMeans(body_gyro_z_train)
-body_gyro_z_train_std <- apply(body_gyro_z_train,1, sd, na.rm = TRUE)
-body_gyro_z_train_ <- data.frame(body_gyro_z_train_means,body_gyro_z_train_std)  #X_train_
+body_gyro_z_means <- rowMeans(body_gyro_z_train)
+body_gyro_z_std <- apply(body_gyro_z_train,1, sd, na.rm = TRUE)
+body_gyro_z_train_ <- data.frame(body_gyro_z_means,body_gyro_z_std)  #X_train_
 head(body_gyro_z_train_)
 
 
@@ -126,9 +126,9 @@ total_acc_x_train <- read.table("./train/Inertial Signals/total_acc_x_train.txt"
 #nrow(total_acc_x_train) has 7352 rows and
 #ncol(total_acc_x_train) has 128 col
 #head(total_acc_x_train)
-total_acc_x_train_means <- rowMeans(total_acc_x_train)
-total_acc_x_train_std <- apply(total_acc_x_train,1, sd, na.rm = TRUE)
-total_acc_x_train_ <- data.frame(total_acc_x_train_means,total_acc_x_train_std)  #X_train_
+total_acc_x_means <- rowMeans(total_acc_x_train)
+total_acc_x_std <- apply(total_acc_x_train,1, sd, na.rm = TRUE)
+total_acc_x_train_ <- data.frame(total_acc_x_means,total_acc_x_std)  #X_train_
 head(total_acc_x_train_)
 
 
@@ -136,9 +136,9 @@ total_acc_y_train <- read.table("./train/Inertial Signals/total_acc_y_train.txt"
 #nrow(total_acc_y_train) has 7352 rows and
 #ncol(total_acc_y_train) has 128 col
 #head(total_acc_y_train)
-total_acc_y_train_means <- rowMeans(total_acc_x_train)
-total_acc_y_train_std <- apply(total_acc_x_train,1, sd, na.rm = TRUE)
-total_acc_y_train_ <- data.frame(total_acc_x_train_means,total_acc_x_train_std)  #X_train_
+total_acc_y_means <- rowMeans(total_acc_x_train)
+total_acc_y_std <- apply(total_acc_x_train,1, sd, na.rm = TRUE)
+total_acc_y_train_ <- data.frame(total_acc_x_means,total_acc_x_std)  #X_train_
 head(total_acc_y_train_)
 
 
@@ -146,9 +146,9 @@ total_acc_z_train <- read.table("./train/Inertial Signals/total_acc_z_train.txt"
 #nrow(total_acc_z_train) has 7352 rows and
 #ncol(total_acc_z_train) has 128 col
 #head(total_acc_z_train)
-total_acc_z_train_means <- rowMeans(total_acc_z_train)
-total_acc_z_train_std <- apply(total_acc_z_train,1, sd, na.rm = TRUE)
-total_acc_z_train_ <- data.frame(total_acc_z_train_means,total_acc_z_train_std)  #X_train_
+total_acc_z_means <- rowMeans(total_acc_z_train)
+total_acc_z_std <- apply(total_acc_z_train,1, sd, na.rm = TRUE)
+total_acc_z_train_ <- data.frame(total_acc_z_means,total_acc_z_std)  #X_train_
 head(total_acc_z_train_)
 
 
